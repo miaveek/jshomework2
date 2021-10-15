@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js homeework 1</title> 
+</head>
+<body>
+    <script>
+/* домашняя работа 02*/
+//задание 1 переписать цикл
+document.write("Домашняя работа №2</br>");
+    var c = parseInt(4),
+        d = parseInt(6),
+            message,
+            login = prompt("Введите login"),
+            result;
+    c + d < 4 ? result = 'Мало' : result = 'Много';
+    document.write(result + '<br>');
+
+    var c = parseInt(1),
+        d = parseInt(2),
+        result;
+    c + d < 4 ? result = 'Мало' : result = 'Много';
+    document.write(result + '<br>');
+//  переписать цикл 2
+message = (login == 'Вася') ? 'Привет' :
+    (login == 'Директор') ? 'Здраствуйте' :
+          (login == '') ? 'Нет логина' : '';
+    document.write(message + '<br>');
+document.write("</br>Задача 1</br>");
+        var a = parseInt(prompt("Введите число A"));
+        var b = parseInt(prompt("Введите число B"));
+
+        if (a < b) {
+            var i = a; 
+            var sum = 0;
+            var list = "";
+            while (i < b){
+                sum+=i;
+                if (i % 2 !== 0) {
+                    list += " " + i;
+                }
+                i++;
+            }
+            document.write("</br>Сумма чисел от А до В  равна "+ sum);
+            if (list.length>0){document.write("<p>"+" Не четные числа в промежутке от А до В  :"+ list);}
+            else{document.write("<p>"+"В промежутке от А до В не найдены не четные числа!");}  }
+            else{document.write("<p>Ошибка")}
+
+    document.write("<P>прямоугольник,построенный циклом 'for'"+"</br></br>");
+    for(var k = 0;k<=5;k++){
+        for(var i = 0; i <= 10;i++){
+            document.write("*");
+        }
+        document.write("</br>");
+    }
+    document.write("треугольник, построенный циклом 'for'"+"</br></br>");
+    document.write("</br>");
+    for(var i =0;i<7;i++){
+                for(var j=0;j<i;j++){
+                    document.write('*');
+                }
+                document.write('<br/>');
+            }
+            document.write("треугольник, построенный циклом 'for'"+"</br></br>");
+    document.write("</br>");
+    for(var i =0;i<7;i++){
+                for(var j=0;j<i;j++){
+                    document.write('*');
+                }
+                document.write('<br/>');
+            }
+            for(var i =0;i<7;i++){
+                for(var j= 7;j>i;j--){
+                    document.write('*');
+                }
+                document.write('<br/>');
+            }
+    document.write("равносторонний треугольник, построенный циклами 'while и for'"+"</br></br>");
+    var i = 0,j = 0;
+    var max = 6;
+    var space = "",
+    star = "";
+    while (i < max) {
+      space = "";
+      star = "";
+      for (j = 0; j < max - i; j++) space += "&nbsp&nbsp";
+      for (j = 0; j < 2 * i + 1; j++) star += "*";
+      document.write(space + star +"</br>");
+      i++;
+    }
+    document.write("</br>РОМБ, построенный циклом "+"</br></br>");
+    var i = 0,j = 0;
+    var max = 6;
+    var space = "",
+    star = "";
+    while (i < max) {
+      space = "";
+      star = "";
+      for (j = 0; j < max - i; j++) space += "&nbsp&nbsp";
+      for (j = 0; j < 2 * i + 1; j++) star += "*";
+      document.write(space + star +"</br>");
+      i++;
+    }
+    var i = 0,j = 0;
+    var max = 5;
+    var space = "",
+    star = "";
+    while (i < max) {
+      space = "";
+      star = "";
+      for (j = 6; j >= max - i; j--) space += "&nbsp&nbsp";
+      for (j = 8; j > 2 * i -1 ; j--) star += "*";
+      document.write(space + star +"</br>");
+      i++;
+    }
+    </script> 
+</body>
+</html>
